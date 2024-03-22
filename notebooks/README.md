@@ -44,4 +44,4 @@ This demo illustrates data preprocessing, knowledge graph creation, and storage 
 - Dragoman
   - RML+FnO [mappings](../mappings) and [configuration files](../configs/config_func.ini) are made available for the execution of [Dragoman](https://github.com/SDM-TIB/Dragoman).
 - SDM-RDFizer
-  - RML [mapping](../mappings) and [configuration files](../configs/config.ini) are made available for the execution for the execution of SDM-RDFizer.
+  - RML [mapping](../mappings) and [configuration files](../configs/config.ini) are made available for the execution of SDM-RDFizer.
