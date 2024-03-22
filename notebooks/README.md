@@ -40,7 +40,7 @@ This demo illustrates the execution of federated queries and queries with access
 This demo illustrates data preprocessing, knowledge graph creation, and storage of datasets. For this demo three tools are used: Leibniz Data Manager, Dragoman, and SDM-RDFizer.
 
 - Leibniz Data Manager
-  - A series of steps are given to aid the user to create a dataset in the Leibniz Data Manager. The user must create an account and user in the [Leibniz Data Manager](https://service.tib.eu/ldmservice/) beforehand.
+  - A series of steps are given to aid the user to create a dataset in the Leibniz Data Manager. The user must create an account and user token in the [Leibniz Data Manager](https://service.tib.eu/ldmservice/) beforehand.
 - Dragoman
   - RML+FnO [mappings](../mappings) and [configuration files](../configs/config_func.ini) are made available for the execution of [Dragoman](https://github.com/SDM-TIB/Dragoman).
 - SDM-RDFizer
