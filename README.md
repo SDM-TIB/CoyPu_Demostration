@@ -1,6 +1,12 @@
 # Federated Exploration of Resilient Supply Value Chains
 
-Supported dataset for RDF KG creation (icews, lei, country and worldbank)
+The goal of this use case is to identify key characteristics of countries and events that have occurred in those countries that may affect any of the steps in a supply value chain. Data is collected from data sources: ICEWS, LEI, World Bank, and Country; these data include information on events, crises, legal identifiers of countries, and socio-economic and health indicators. Specifically, the World Bank knowledge graph consists of 250,097,215 RDF triples that specify, per year and country, the value of several indicators, such as life expectancy, population, inflation, and age distribution.
+The knowledge graph contains data for 1,436 different indicators for 265 countries for the years 1960 to 2021.
+The average number of indicators per country per year is 711,225, meaning that not all indicators are included for all countries for all years.
+
+A federation of knowledge graphs is created and explored via SPARQL queries. A sample of these queries is shown in this demo. Some of these queries include: a) Comparison of two or more socio-economic and health indicators per country; b) Deaths in a given period per country; c) Average life expectancy in a given year for different countries; d) Population for different countries and their capital in a given year; e) Population and net migration in a country; f) GDP growth in different years under different presidents of a country; and g) Avg. GDP growth under different presidents of a country. In addition, access control policies are validated to ensure that data is accessed according to the policies specified by the data providers.   
+
+These results of traversing the federation of the knowledge graphs created from the integration of ICEWS, LEI, World Bank, and Country data are demonstrated via Jupiter notebooks. 
 
 Install packages and run notebooks in `notebooks` folder
 
@@ -105,7 +111,7 @@ semantify('../configs/config.ini')
 
 ### Examples
 
-#### Federated Query Example 1 - [GDP Per Capita Vs Carbon Emission Per Capita in Germany](https://dashboards.coypu.org/queries/240#540)
+#### Federated Query Example 1 - [GDP Per Capita Vs Carbon Emission Per Capita in Germany]()
 
 ```sparql
 PREFIX wb: <http://worldbank.org/>
@@ -161,7 +167,7 @@ ORDER BY ?year
 
 <img src="./notebooks/images/gdp_carban.png"  >
 
-#### Federated Query Example 2 - [Fatalities in Ukraine](https://dashboards.coypu.org/queries/241#541)
+#### Federated Query Example 2 - [Fatalities in Ukraine]()
 
 ```sparql
 PREFIX coy: <https://schema.coypu.org/global#>
@@ -200,7 +206,7 @@ Group by ?year
 ```
 <img src="./notebooks/images/fatal_ukr.png"  >
 
-#### Federated Query Example 3 - [Carbon Emission Vs Disaster Event in Germany](https://dashboards.coypu.org/queries/238#538)
+#### Federated Query Example 3 - [Carbon Emission Vs Disaster Event in Germany]()
 
 ```sparql
 PREFIX co: <http://purl.org/ontology/co/core#>
@@ -242,7 +248,7 @@ ORDER BY ?year
 
 <img src="./notebooks/images/carbon_dis.png"  >
 
-#### Federated Query Example 4 - [Average Life Expectancy(WorldBank Vs Wikidata) in year 2017 for different countries](https://dashboards.coypu.org/queries/239#539)
+#### Federated Query Example 4 - [Average Life Expectancy(WorldBank Vs Wikidata) in year 2017 for different countries]()
 
 ```Sparql
 PREFIX wb: <http://worldbank.org/>
@@ -278,7 +284,7 @@ ORDER BY ?country_code
 ```
 <img src="./notebooks/images/lifeexp_wiki_wb.png"  >
 
-#### Federated Query Example 5 - [Population for different countries and their capital 2021 ](https://dashboards.coypu.org/queries/247/source#569)
+#### Federated Query Example 5 - [Population for different countries and their capital 2021 ]()
 
 ```Sparql
 PREFIX wb: <http://worldbank.org/>
@@ -324,7 +330,7 @@ WHERE {
 }Order by ?code
 ```
 
-#### Federated Query Example 6 - [Population and Net Migration for United Kingdom](https://dashboards.coypu.org/queries/248/source#560)
+#### Federated Query Example 6 - [Population and Net Migration for United Kingdom]()
 
 ```Sparql
 PREFIX wd: <http://www.wikidata.org/entity/>
@@ -370,7 +376,7 @@ Order by ?year
 ```
 <img src="./notebooks/images/pop_mig.png"  >
 
-#### Federated Query Example 7 - [GDP Growth in different years under different President of United States]()
+#### Federated Query Example 7 - [GDP Growth in different years under different Presidents of United States]()
 
 ```Sparql
 PREFIX wd: <http://www.wikidata.org/entity/>
@@ -421,7 +427,7 @@ where {
 }
 ```
 
-#### Federated Query Example 8 - [Avg GDP Growth under different President of United States](https://dashboards.coypu.org/queries/249/source#564)
+#### Federated Query Example 8 - [Avg GDP Growth under different Presidents of United States]()
 
 ```Sparql
 PREFIX wd: <http://www.wikidata.org/entity/>
@@ -474,7 +480,7 @@ where {
 
 <img src="./notebooks/images/avggdp_usa.png"  >
 
-#### Federated Query Example 9 - [Population Growth and Fertility Rate in United States](https://dashboards.coypu.org/queries/250/source#568)
+#### Federated Query Example 9 - [Population Growth and Fertility Rate in United States]()
 
 ```Sparql
 PREFIX wd: <http://www.wikidata.org/entity/>
@@ -520,7 +526,7 @@ where {
 
 <img src="./notebooks/images/pop_fer.png"  >
 
-#### Federated Query Example 10 - [Human Development Index vs Human Capital Index in Germany](https://dashboards.coypu.org/queries/251/source#572)
+#### Federated Query Example 10 - [Human Development Index vs Human Capital Index in Germany]()
 
 ```Sparql
 PREFIX wd: <http://www.wikidata.org/entity/>
