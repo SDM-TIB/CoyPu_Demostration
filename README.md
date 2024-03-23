@@ -97,15 +97,15 @@ semantify('../configs/config.ini')
 
 <img src="./notebooks/images/architecture.png">
 
-## Federated Query Engine - [Detrusty](https://github.com/SDM-TIB/DeTrusty)
+## Federated Query Engine - [DeTrusty](https://github.com/SDM-TIB/DeTrusty)
 
 - Integrates a federation of remote RDF knowledge graphs (heterogeneous data)
 - Unified interface to query a federation using SPARQL 1.1 protocol without service operation
 - List of RDF KGs : Public KG ([WorldBank](https://labs.tib.eu/sdm/worldbank_endpoint/sparql/), [Wikidata](https://query.wikidata.org/), [DBpedia](https://dbpedia.org/sparql), [ICEWS](https://labs.tib.eu/sdm/icews_endpoint/sparql), [GLEIF](https://labs.tib.eu/sdm/lei_endpoint/sparql),
 [Skynet (Private KG)](https://skynet.coypu.org))
 - [How to run and configure it](https://github.com/SDM-TIB/DeTrusty)
-- [Detrusty Endpoint](https://labs.tib.eu/sdm/detrusty_coypu/sparql) to execute queries
-- [Detrusty Query Planner](https://labs.tib.eu/sdm/detrusty_coypu/query_plan)
+- [DeTrusty Endpoint](https://labs.tib.eu/sdm/detrusty_coypu/sparql) to execute queries
+- [DeTrusty Query Planner](https://labs.tib.eu/sdm/detrusty_coypu/query_plan)
 
 <img src="./notebooks/images/detrusty.png">
 
